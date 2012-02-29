@@ -1,5 +1,6 @@
-ymposion
-=========
+===========
+CMS Project
+===========
 
 This repository stores the Pinax Django-CMS starter project. 
 This project is open source and the license can be found in LICENSE.
