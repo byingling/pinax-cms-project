@@ -1,0 +1,7 @@
+*.pyc
+*.pyo
+
+.directory
+password.py
+dev.db
+secret.txt

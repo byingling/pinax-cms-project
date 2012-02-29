@@ -1,0 +1,22 @@
+{% extends "theme_base.html" %}
+
+{% load menu_tags %}
+{% load metron_tags %}
+{% load i18n %}
+
+{% block nav %}
+    {% if user.is_authenticated %}
+        <ul class="nav">{% spaceless %}
+            {% show_menu 0 100 100 100 %}
+        {% endspaceless %}</ul>
+    {% endif %}
+{% endblock %}
+
+{% block footer %}
+    {% include "_footer.html" %}
+{% endblock %}
+
+{% block extra_body_base %}
+    {% analytics %}
+    {% block extra_body %}{% endblock %}
+{% endblock %}
