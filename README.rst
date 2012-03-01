@@ -2,14 +2,14 @@
 CMS Project
 ===========
 
-This repository stores the Pinax Django-CMS starter project. 
+This repository stores the Django-CMS starter project for Pinax. 
 This project is open source and the license can be found in LICENSE.
 
 
 Installation
 ============
 
-To get setup with symposion_project code you must have the following
+To get setup with cms_project code you must have the following
 installed:
 
  * Python 2.6+
@@ -29,7 +29,7 @@ Make the project directory your working directory::
 
     $ cd cms_project
 
-Install conference project dependencies::
+Install project dependencies::
 
     (mycmdproject)$ pip install -r requirements/project.txt
 
@@ -48,7 +48,7 @@ Running a web server
 
 In development you should run::
 
-    (myconference)$ python manage.py runserver
+    (mycmsproject)$ python manage.py runserver
 
 For production, this project comes with a WSGI entry point located in
 ``deploy/wsgi.py`` and can be referenced by gunicorn with
