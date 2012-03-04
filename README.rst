@@ -23,15 +23,12 @@ Create a virtual environment where your dependencies will live::
 
     $ virtualenv --no-site-packages mycmsproject
     $ source mycmsproject/bin/activate
-    (mycmsproject)$
+    (mycmsproject)$ pip install pinax
+    (mycmsproject)$ pip install -e git+git://github.com/dfalk/pinax-cms-project.git
 
-Make the project directory your working directory::
+Setup new project::
 
-    $ cd cms_project
-
-Install project dependencies::
-
-    (mycmdproject)$ pip install -r requirements/project.txt
+    (mycmsproject)$ pinax-admin setup_project -b cms mycms
 
 Setting up the database
 -----------------------
