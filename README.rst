@@ -29,7 +29,7 @@ Use cms_project as your project.
 
 OR
 
-Copy package to site-packages/ directory and setup new project::
+Copy package to site-packages/pinax/projects directory and setup new project::
 
     (mycmsproject)$ pinax-admin setup_project -b cms mycms
 
