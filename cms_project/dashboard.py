@@ -40,7 +40,8 @@ class CustomIndexDashboard(Dashboard):
 
         # append an app list module for "Administration"
         self.children.append(modules.AppList(
-            _('Administration'),
+            _('Content'),
+            include_list=('cms','announcements',)
         ))
 
         # append a recent actions module

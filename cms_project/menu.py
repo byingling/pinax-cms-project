@@ -22,8 +22,17 @@ class CustomMenu(Menu):
             items.MenuItem(_('Dashboard'), reverse('admin:index')),
             items.Bookmarks(),
             items.AppList(
-                _('Administration'),
-            )
+                _('Site'),
+                include_list=('django.contrib.sites',)
+            ),
+            items.AppList(
+                _('Content'),
+                include_list=('cms','announcements',)
+            ),
+            items.AppList(
+                _('Users'),
+                include_list=("django.contrib.auth","pinax.apps.account","profiles","emailconfirmation","notification","mailer","django_openid",    "pinax.apps.signup_codes",)
+            ),
         ]
 
     def init_with_context(self, context):
