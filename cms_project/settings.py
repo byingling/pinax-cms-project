@@ -132,6 +132,11 @@ TEMPLATE_CONTEXT_PROCESSORS = [
 ]
 
 INSTALLED_APPS = [
+    'admin_tools',
+    'admin_tools.theming',
+    'admin_tools.menu',
+    'admin_tools.dashboard',
+
     # Django
     "django.contrib.admin",
     "django.contrib.auth",
@@ -189,6 +194,10 @@ INSTALLED_APPS = [
     'cmsplugin_contact',
 
 ]
+
+ADMIN_TOOLS_MENU = 'menu.CustomMenu'
+ADMIN_TOOLS_INDEX_DASHBOARD = 'dashboard.CustomIndexDashboard'
+ADMIN_TOOLS_APP_INDEX_DASHBOARD = 'dashboard.CustomAppIndexDashboard'
 
 CMS_TEMPLATES = (
     ('cms_base.html', 'Base'),
